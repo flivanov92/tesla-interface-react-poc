@@ -5,6 +5,7 @@ export const ResetCss = createGlobalStyle`
   html,
   body {
     height: 100%;
+    font-family: 'Albert Sans' ;
 
   }
 
@@ -12,6 +13,7 @@ export const ResetCss = createGlobalStyle`
   *::before,
   *::after {
     box-sizing: border-box ;
+    margin: 0;
   }
 
 `;
