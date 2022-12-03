@@ -1,10 +1,15 @@
-import Global from '../global/global';
+import { Background, Global, Theme } from '..';
 
 const Tesla = () => (
   <div>
-    <Global />
-    <h1>Hi there</h1>
-    <p>Yeeey </p>
+    <Theme>
+      <Global />
+      <h1>Hi there</h1>
+      <br></br>
+      <br></br>
+      <p>Yeeeyas </p>
+      <Background id='model-3'>yyyy</Background>
+    </Theme>
   </div>
 );
 
