@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const ResetCss = createGlobalStyle`
+  :root {
+    --my-padding: 20px
+  }
 
   html,
   body {
