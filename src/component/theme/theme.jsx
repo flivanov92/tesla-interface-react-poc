@@ -9,7 +9,7 @@ const theme = {
     dark: '#000',
   },
   border: {
-    radius: '20',
+    radius: 20,
   },
 };
 

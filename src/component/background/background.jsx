@@ -1,9 +1,13 @@
 import * as S from './background.style';
-import { shape, node, string, arrayOf } from 'prop-types';
+import { shape, string, arrayOf } from 'prop-types';
 
 const Background = ({ section }) => {
   const { id, link, who, buttonList } = section;
-  return <S.Background image={id}>{who}</S.Background>;
+  return (
+    <S.Background image={id} link={link}>
+      {who}
+    </S.Background>
+  );
 };
 
 Background.defaultProps = {
@@ -16,12 +20,12 @@ Background.defaultProps = {
   },
 };
 
-Background.protoTypes = {
+Background.propTypes = {
   section: shape({
-    children: node,
     id: string.isRequired,
     link: string.isRequired,
     text: string.isRequired,
+    who: string.isRequired,
     buttonList: arrayOf(string),
   }),
 };
