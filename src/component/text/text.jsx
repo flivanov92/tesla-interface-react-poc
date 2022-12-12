@@ -1,7 +1,7 @@
 import { bool, node } from 'prop-types';
 import * as S from './text.style';
 
-const Text = ({ myLink = false, children, myTitle = false }) => {
+const Text = ({ myLink, children, myTitle }) => {
   return (
     <S.Text myLink={myLink} myTitle={myTitle}>
       {children}
