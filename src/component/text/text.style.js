@@ -31,6 +31,7 @@ export const Text = styled.div`
   white-space: nowrap;
   color: ${getColor};
   justify-self: center;
+  align-self: center;
   ${getTitle}
   ${getLink}
 `;

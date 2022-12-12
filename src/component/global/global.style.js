@@ -1,15 +1,19 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const ResetCss = createGlobalStyle`
-  :root {
+  /* :root {
     --my-padding: 20px
-  }
+  } */
 
   html,
   body {
     height: 100%;
     font-family: 'Albert Sans' ;
 
+  }
+
+  html {
+    scroll-behavior: smooth ;
   }
 
   *, 

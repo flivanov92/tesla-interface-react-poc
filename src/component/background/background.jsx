@@ -3,10 +3,10 @@ import { shape, string, arrayOf } from 'prop-types';
 import { Panel } from '..';
 
 const Background = ({ section }) => {
-  const { id, link, who, buttonList } = section;
+  const { id, link, text, who, buttonList } = section;
   return (
-    <S.Background image={id} link={link}>
-      <Panel>{who}</Panel>
+    <S.Background image={id} link={link} id={id}>
+      <Panel text={text} title={who} link={link} />
     </S.Background>
   );
 };
