@@ -19,7 +19,7 @@ const Tesla = () => {
       }
     })();
   }, []);
-
+  console.log(mylist);
   return (
     <div>
       <Theme>
@@ -30,12 +30,10 @@ const Tesla = () => {
         <br></br>
         <p>Yeeeyas </p>
         <div>
-          <Text myTitle>title</Text>
+          <Text myTitle>titleyptqhp</Text>
           <Text myLink myTitle>
-            link
+            linkypgqt
           </Text>
-          <Text>default</Text>
-          <Text>default</Text>
         </div>
         {mylist.map((section) => (
           <Background key={section.id} section={section} />
