@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Background, Global, Text, Theme } from '..';
+import { Background, Global, Theme } from '..';
 
 const Tesla = () => {
   const [mylist, update] = useState([]);
@@ -19,14 +19,17 @@ const Tesla = () => {
       }
     })();
   }, []);
-  console.log(mylist);
   return (
     <div>
       <Theme>
         <Global />
 
-        {mylist.map((section) => (
-          <Background key={section.id} section={section} />
+        {mylist.map((section, key) => (
+          <Background
+            key={section.id}
+            section={section}
+            goTo={key < mylist.length - 1 ? mylist[key + 1].id : mylist[0].id}
+          />
         ))}
       </Theme>
     </div>

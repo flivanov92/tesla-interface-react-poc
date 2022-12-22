@@ -1,8 +1,8 @@
 import * as S from './background.style';
 import { shape, string, arrayOf } from 'prop-types';
-import { Box, Button, Panel } from '..';
+import { Box, Button, Panel, Vshape } from '..';
 
-const Background = ({ section }) => {
+const Background = ({ section, goTo }) => {
   const { id, link, text, who, buttonList = [] } = section;
   return (
     <S.Background image={id} link={link} id={id}>
@@ -13,7 +13,7 @@ const Background = ({ section }) => {
             <Button nuance={key}>{buttonText}</Button>
           ))}
         </Box>
-        <div>Chevron</div>
+        <Vshape id={id} goTo={goTo} />
       </Box>
     </S.Background>
   );

@@ -12,7 +12,7 @@ export const Panel = styled.div`
     grid-column: 1/-1;
   }
 
-  & > div:nth-child(2):last-child{
+  & > div:nth-child(2):last-chid{
     grid-column: 1/-1;
   }
 `;
