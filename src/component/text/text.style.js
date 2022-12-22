@@ -6,7 +6,7 @@ const sizeMap = {
   l: 48,
 };
 
-const getTitle = ({ myTitle = false }) => myTitle ? css`
+const getTitle = ({ myTitle }) => myTitle ? css`
     font-size: ${sizeMap.l / 16}rem;
     display: flex;
     justify-content: center;
@@ -31,7 +31,6 @@ export const Text = styled.div`
   white-space: nowrap;
   color: ${getColor};
   justify-self: center;
-  align-self: center;
   ${getTitle}
   ${getLink}
 `;

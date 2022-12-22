@@ -25,16 +25,6 @@ const Tesla = () => {
       <Theme>
         <Global />
 
-        <h1>Hi there</h1>
-        <br></br>
-        <br></br>
-        <p>Yeeeyas </p>
-        <div>
-          <Text myTitle>titleyptqhp</Text>
-          <Text myLink myTitle>
-            linkypgqt
-          </Text>
-        </div>
         {mylist.map((section) => (
           <Background key={section.id} section={section} />
         ))}
