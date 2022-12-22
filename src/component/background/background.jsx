@@ -1,12 +1,20 @@
 import * as S from './background.style';
 import { shape, string, arrayOf } from 'prop-types';
-import { Panel } from '..';
+import { Box, Button, Panel, Vshape } from '..';
 
-const Background = ({ section }) => {
-  const { id, link, text, who, buttonList } = section;
+const Background = ({ section, goTo }) => {
+  const { id, link, text, who, buttonList = [] } = section;
   return (
     <S.Background image={id} link={link} id={id}>
       <Panel text={text} title={who} link={link} />
+      <Box gap='large'>
+        <Box gap='small'>
+          {buttonList.map((buttonText, key) => (
+            <Button nuance={key}>{buttonText}</Button>
+          ))}
+        </Box>
+        <Vshape id={id} goTo={goTo} />
+      </Box>
     </S.Background>
   );
 };

@@ -5,9 +5,9 @@ import { string } from 'prop-types';
 const Panel = ({ title, text, link }) => {
   return (
     <S.Panel>
-      <Text isTitle>{title}</Text>
+      <Text myTitle>{title}</Text>
       <Text>{text}</Text>
-      <Text isLink>{link}</Text>
+      <Text myLink>{link}</Text>
     </S.Panel>
   );
 };
