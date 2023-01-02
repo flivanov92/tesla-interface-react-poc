@@ -7,11 +7,13 @@ const Tesla = () => {
   useEffect(() => {
     (async () => {
       try {
-        const result = await (
-          await fetch('http://localhost:3001/section')
+        const { section } = await (
+          await fetch(
+            'https://raw.githubusercontent.com/flivanov92/tesla-interface-react-poc/dev/src/data/site.json'
+          )
         ).json();
 
-        update(result);
+        update(section);
       } catch (error) {
         console.error(
           `Error with message: ${error.message} and code: ${error.code}`

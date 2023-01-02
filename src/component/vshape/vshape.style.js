@@ -1,6 +1,6 @@
 import styled, {css} from 'styled-components';
 
-export const Vshape = styled.div`
+export const Vshape = styled.a`
   width: 48px;
   height: 48px;
   background-color: transparent;

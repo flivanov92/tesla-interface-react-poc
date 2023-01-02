@@ -2,7 +2,7 @@ import * as S from './vshape.style';
 
 const Vshape = ({ id, goTo }) => {
   return (
-    <S.Vshape id={id} goTo={`#${goTo}`}>
+    <S.Vshape href={`#${goTo}`} id={id}>
       <svg
         width='48'
         height='48'
